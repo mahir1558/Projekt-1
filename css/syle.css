@@ -1,0 +1,645 @@
+/* FONTOVI :*/
+@font-face {
+    font-family: Caveat-Regular;
+    src: url("fonts/Caveat-Regular.ttf");
+}
+@font-face {
+    font-family: Caveat-Bold;
+    src: url("fonts/Caveat-Bold.ttf");
+}
+@font-face {
+    font-family: Kalam-Regular;
+    src: url("fonts/Kalam-Regular.ttf");
+}
+@font-face {
+    font-family: Kalam-Bold;
+    src: url("fonts/Kalam-Bold.ttf");
+}
+@font-face {
+    font-family: Kalam-Light;
+    src: url("fonts/Kalam-Light.ttf");
+}
+
+@font-face {
+    font-family: MarckScript-Regular;
+    src: url("fonts/MarckScript-Regular.ttf");
+}
+/*IZMJENA SVOJSTAVA OSNOVNIH TAGOVA*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+hr{
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h2{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    padding: 10px;
+    font-size: 38px;
+    color: white;
+}
+table{
+    width: 500px;
+}
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    height: 109px;
+    background-color: white;
+}
+.logo {
+    display: block;
+    float: left;
+    margin-right: 35px;
+    padding-left: 50px;
+}
+.logoimage{
+    height: 100px;
+    width: 100px;
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    color: #003a3d;
+    display: block;
+    list-style: none;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+.menu li a:hover {
+    border-bottom: 6px solid #003a3d;
+    color: deepskyblue;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.search {
+    margin: 34px 30px;
+    padding: 10px 10px;
+    position: relative;
+    float: right;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 30px;
+}
+.search:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.input {
+    float: left;
+    width: 90%;
+    font-size: 14px;
+    background-color:transparent;
+    border: none;
+    color: white;
+}
+.input:focus{
+    outline: none;
+}
+.icon {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url(images/icon.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+/*GLAVNI DIO - POCETNA STRANA*/
+
+main{
+    width: 100%;
+    height: 420px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.poster{
+    width: 100%;
+    height: 100%;
+}
+.text{
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    text-align: left;
+
+}
+#h1{
+    font-family: 'Caveat', cursive;
+    font-size: 36px;
+    margin-right: 500px;
+}
+#h2{
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    margin-right: 700px;
+}
+#h3{
+    font-family: 'Kalam', cursive;
+    font-size: 34px;
+    color: white;
+    position: relative;
+    float: right;
+    right: 30px;
+    bottom: 30px;
+}
+.btn{
+    position: relative;
+    width: 160px;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    padding: 7px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.icon2{
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url(images/icon.png) 0 -20px no-repeat;
+}
+
+/* INFORMACIJE O STRANICI */
+
+#about{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    padding: 10px;
+    font-size: 42px;
+    color: white;
+}
+.about{
+    background-color: darkslateblue;
+    width: 100%;
+    height: 500px;
+}
+.textabout{
+    font-size: 24px;
+    font-family: 'Marck Script', cursive;
+    text-align: center;
+    padding: 6px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+}
+
+/* UTISCI GOSTIJU : */
+
+.impressions{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+.textimpressions{
+    position: absolute;
+    color: white;
+    width: 100%;
+    top: 10px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    text-align: center;
+}
+.impressionsbox{
+    position: absolute;
+    top: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftpart, .centeredpart, .rightpart{
+    background:transparent;
+    width:33.33vw;
+    height: 350px;
+    padding: 30px;
+    text-align: center;
+}
+.impressionstext{
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    opacity: 0.75;
+}
+.impressionstext:hover{
+    opacity: 1;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.impressionsimage{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+}
+.fivestars{
+    width: 100px;
+    height: 37px;
+    margin-top: 30px;
+    margin-right: 62px;
+}
+.abookofimpressions{
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+}
+.signature{
+    font-family: 'Marck Script', cursive;
+    color: darkgray;
+    font-size: 20px;
+}
+
+/* GALERIJA SLIKA */
+
+#gallerytitle{
+    display: inline-block;
+    font-family: 'Marck Script', cursive;
+    padding: 10px;
+    width: 100%;
+    color: darkslateblue;
+}
+#gallery{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftpartgallery, .centeredpartgallery, .rightpartgallery{
+    background:transparent;
+    width:33.33vw;
+    height: 350px;
+    padding: 30px;
+    text-align: center;
+}
+.galleryimage{
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    opacity: 0.75;
+}
+.galleryimage:hover{
+    opacity: 1;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.ourplace{
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTACT AND MAPS */
+
+#contact{
+    font-family: 'Kalam', cursive;
+    font-size:20px;
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    background-color: transparent;
+    background-image: url("images/contact.jpg");
+    padding: 0 50px;
+    color: white;
+}
+#fieldset{
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    background-color: darkslateblue;
+    border-radius: 5px;
+}
+#fieldset:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.field{
+    height: 30px;
+    border-radius: 5px;
+    margin: 7px;
+    size: 35;
+}
+#btnsend{
+    position: relative;
+    float: right;
+    width: 160px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 30px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+#btnsend:focus{
+    outline: none;
+}
+#btnsend:hover{
+    box-shadow: 0 0 3px #FF0000, 0 0 5px white;
+}
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    margin-top: 30px;
+    opacity: 0.75;
+}
+#map:hover{
+    opacity: 1;
+}
+
+/* FOOTER AND LINKS */
+
+footer {
+    height: 130px;
+    color: white;
+    font-family: 'Kalam', cursive;
+    font-size:20px;
+    background-color: darkslateblue;
+}
+#copyright{
+    padding: 50px;
+    float: left;
+    width: 70%;
+}
+#links{
+    padding: 50px;
+    float: right;
+    width: 30%;
+}
+.twitter {
+    background-image: url("images/icon2.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.instagram {
+    background-image: url("images/icon2.png");
+    background-position: 0 -40px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.facebook {
+    background-image: url("images/icon2.png");
+    background-position: 0 -80px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+@media screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    /* OSNOVNI TAGOVI */
+
+    h1{
+        font-size: 16px;
+    }
+    h2{
+        padding: 3px;
+        font-size: 16px;
+    }
+    table{
+        width: 300px;
+    }
+
+    /* HEADER */
+
+    header{
+        height: 60px;
+        background-color: white;
+    }
+    .logo {
+        margin-right: 50px;
+        padding-left: 20px;
+        height: 30px;
+        width: 30px;
+    }
+    .logoimage{
+        height: 50px;
+        width: 50px;
+    }
+    .menu li a {
+        padding: 20px 10px;
+        font-size: 10px;
+    }
+    .menu li a:hover {
+        border-bottom: 3px solid #003a3d;
+    }
+    .search {
+        display: none;
+    }
+
+    /*GLAVNI DIO - POCETNA STRANA*/
+
+    main{
+        height: 200px;
+    }
+    .text{
+        top: 10px;
+        left: 15px;
+        height: 100%;
+    }
+    #h1{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    #h2{
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    #h3{
+        font-size: 12px;
+        right: 5px;
+        top: 30px;
+    }
+    .btn{
+        width: 80px;
+        border-radius: 10px;
+        font-size: 8px;
+        padding: 4px;
+        text-align: center;
+    }
+    .icon2{
+        display: none;
+    }
+
+    /* INFORMACIJE O STRANICI */
+
+    #about{
+        padding: 5px;
+        font-size: 18px;
+    }
+    .about{
+        height: 370px;
+    }
+    .textabout{
+        font-size: 14px;
+        padding: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* UTISCI GOSTIJU : */
+
+    .impressions{
+        height: 320px;
+    }
+    .impressionsbox{
+        top: 50px;
+    }
+    .leftpart, .centeredpart, .rightpart{
+        height: 250px;
+        padding: 8px;
+    }
+    .impressionsimage{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    .fivestars{
+        width: 33px;
+        height: 12px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .abookofimpressions{
+        font-size: 10px;
+        margin: 10px;
+    }
+    .signature{
+        font-size: 7px;
+    }
+
+    /* GALERIJA SLIKA */
+
+    #gallerytitle{
+        padding: 7px;
+        width: 100%;
+    }
+    #gallery{
+        height: 500px;
+        display: block;
+    }
+    .leftpartgallery, .centeredpartgallery, .rightpartgallery{
+        width:100%;
+        margin: auto;
+        padding: 5px 0;
+        height: 150px;
+    }
+    .galleryimage{
+        margin: auto;
+        opacity: 1;
+    }
+
+    /* CONTACT AND MAPS */
+
+    #contact{
+        font-size:10px;
+        height: 450px;
+        margin: auto;
+        padding: 0 10px;
+    }
+    #fieldset{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .field{
+        height: 20px;
+        border-radius: 5px;
+        margin: 7px;
+        width: 100px;
+    }
+    #btnsend{
+        width: 50px;
+        border-radius: 10px;
+        font-size: 10px;
+        padding: 4px;
+    }
+    #map {
+        height: 200px;
+        margin-top: 15px;
+        opacity: 1;
+    }
+
+    /* FOOTER AND LINKS */
+
+    footer {
+        height: 70px;
+        font-size:10px;
+    }
+    #copyright{
+        padding: 20px;
+        width: 60%;
+    }
+    #links{
+        padding: 16px 0px;
+        float: right;
+        width: 40%;
+    }
+    .twitter {
+        background-image: url("images/icon2.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+    .instagram {
+        background-image: url("images/icon2.png");
+        background-position: 0 -40px;
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+    .facebook {
+        background-image: url("images/icon2.png");
+        background-position: 0 -80px;
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+}

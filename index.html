@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant King</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="css/images/logo.png">
+    <link rel="stylesheet" href="css/syle.css">
+</head>
+<body>
+<header> <!--HEDER-->
+    <a class="logo" href="#"><img class="logoimage" src="css/images/logo.png"/></a>
+    <nav class="menu"> <!--MENU-->
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#about">About Us</a>
+            </li>
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="search"> <!--SEARCH BOX-->
+        <input class="input" type="text" placeholder="Search" />
+        <span class="icon"></span>
+    </div>
+</header>
+<main> <!--POCETNA STRANICA-->
+    <img class="poster" src="css/images/dinner.jpg"> <!--POZADINA-->
+        <div class="text">
+            <p id="h1">One thousand flavors in one place</p>
+            <br/>
+            <br/>
+            <br/>
+            <p id="h2">Come join us for breakfast, lunch or dinner and dine on our outdoor patio or in the newly remodeled dining room.</p>
+            <br/>
+            <a href="#about">
+                <button class="btn">
+                    <span>Read more</span>
+                    <span class="icon2"></span>
+                </button>
+            </a>
+            <span id="h3">
+                <p>Monday to Friday</p>
+                <p>8AM - 11PM</p>
+        </span>
+        </div>
+</main>
+<div class="about"> <!--INFORMACIJE O WEB STRANICI-->
+    <hr/>
+    <br/>
+    <h1 id="about">About Us</h1>
+    <h2>King Restaurant</h2>
+    <p class="textabout">
+        If you’ve never been to our restaurant before, you should know that it's a large dining room that can seat many people.
+        With that sort of space, we have the capacity to host a range of events and special occasions.
+    </p>
+    <p class="textabout">
+        The King Restaurant is happy to be the venue for your next presentation, reunion, party, luncheon or banquet.
+        With two banquet rooms, presentation screens, an LCD projector and a podium,
+        The King Restaurant can transform a space into the perfect site for your gathering.
+    </p>
+    <p class="textabout">
+        To reserve a space for your next event, come by the restaurant or call +38760 225 883 today.
+    </p>
+</div>
+<div class="impressions"> <!--UTISCI GOSTIJU-->
+    <img class="poster" src="css/images/impressions.jpg">
+    <div class="textimpressions">
+        <h1>What our guests say about us</h1>
+    </div>
+    <div class="impressionsbox">
+        <div class="leftpart">
+            <div class="impressionstext">
+                <img class="impressionsimage" src="css/images/impression.PNG"> <!--CRVENI DETALJ U DIVU-->
+                <img class="fivestars" src="css/images/fivestars.jpeg"> <!--5 ZVJEZDICA-->
+                <p class="abookofimpressions">
+                    Amazing food , the grilled calamari were sublime, the potato and octopus salad was top.
+                    Thank you and keep on the good work!
+                </p>
+                <br/>
+                <p class="signature">
+                    - Daniel Humm -
+                </p>
+            </div>
+        </div>
+        <div class="centeredpart">
+            <div class="impressionstext">
+                <img class="impressionsimage" src="css/images/impression.PNG">
+                <img class="fivestars" src="css/images/fivestars.jpeg">
+                <p class="abookofimpressions">
+                    Went there for lunch. Simple and relaxed ambient, fresh and delicious food, great service, highly recommended!
+                </p>
+                <br/>
+                <p class="signature">
+                    - Jamie Oliver -
+                </p>
+            </div>
+        </div>
+        <div class="rightpart">
+            <div class="impressionstext">
+                <img class="impressionsimage" src="css/images/impression.PNG">
+                <img class="fivestars" src="css/images/fivestars.jpeg">
+                <p class="abookofimpressions">
+                    Perfect food (fish, meat, vegetables we find everything, super good plate) The service was very nice, thank you Mr Malden!
+                    I recommend it!
+                </p>
+                <p class="signature">
+                    - Daniel Son -
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<h1 id="gallerytitle">This is Our Place. Come and Enjoy. Poslovna zona Zenica 1, Zmaja od Bosne bb, Zenica 72000</h1> <!--GALERIJA-->
+<div id="gallery"> <!--PODIJELJENA U 3 PODJEDNAKA DIJELA :-->
+        <div class="leftpartgallery">
+            <div class="galleryimage">
+                <img class="ourplace" src="css/images/ourplace1.jpg">
+            </div>
+        </div>
+        <div class="centeredpartgallery">
+            <div class="galleryimage">
+                <img class="ourplace" src="css/images/ourplace2.jpg">
+            </div>
+        </div>
+        <div class="rightpartgallery">
+            <div class="galleryimage">
+                <img class="ourplace" src="css/images/ourplace3.jpg">
+            </div>
+        </div>
+</div>
+<div id="contact"> <!--KONTAKT FORMA I GOOGLE MAPS-->
+    <h2>Contact And Maps</h2>
+    <fieldset id="fieldset"><legend>Write To Us...</legend>
+        <form action="contact.php" method="post">
+            <table>
+                <tr>
+                    <td>E-mail :</td>
+                    <td><input class="field" name="field" type="text" placeholder="E-mail"/></td>
+                </tr>
+                <tr>
+                    <td>Tittle :</td>
+                    <td><input class="field" name="field" type="text" placeholder="Your name"/></td>
+                </tr>
+                <tr>
+                    <td>Comment :</td>
+                    <td><textarea class="field" name="polje" cols="30" rows="10" placeholder="Message"></textarea></td>
+                </tr>
+            </table>
+        </form>
+        <a methods="send.php"><button id="btnsend">
+            <span>Send</span>
+            <span class="icon2"></span>
+        </button></a>
+    </fieldset>
+    <div id="map"> <!--GOOGLE MAP - JAVASCRIPT-->
+        <script>
+            function initMap() {
+                var uluru = {lat: 44.2104, lng: 17.9000};
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 17, center: uluru});
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaLsNNoVyv483yCNZ7v4-urL96anoL9cw&callback=initMap">
+        </script>
+    </div>
+</div>
+<footer> <!--FOOTER-->
+    <span id="copyright">Copyright &copy; ZeForge Academy</span>
+    <span id="links"> <!--LINKOVI ZA FB, INSTAGRAM I TWITTER-->
+        <a class="facebook" href="http://facebook.com" title="Facebook" target="blank"></a>
+        <a class="instagram" href="http://instagram.com" title="Instagram" target="blank"></a>
+        <a class="twitter" href="http://twitter.com" title="Twitter" target="blank"></a>
+    </span>
+</footer>
+</body>
+</html>
